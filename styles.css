@@ -1,4 +1,4 @@
-/* .wlc {
+.wlc {
   font-family: "Brush Script MT", cursive;
   text-align: center;
   font-size: 75px;
@@ -19,33 +19,42 @@ nav {
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: auto;
-  min-width: 500px;
-gap: 25px;
-  border :  1px gold;
-}
-.sandwish{ border: 3px solid gold;
-border-radius: 5px;}
-.sandwish{
-  font-size: 30px;
-  align-items: center;
-  text-align: center;
-  color: gold;
-}
-.content {
-  color: white;
-  text-align: center;
-  font-size: 15px;
+  grid-template-columns:repeat(3,1fr);
+  min-height: 200px;
+  min-width: 50px;
+  gap: 25px;
+  border: 1px gold;
 }
 
-.footer{ position: relative;
-background-color: azure;
-color: black;
-width: 100%;
-text-align:center;
-font-weight: bold;
-font-size: 20px;
-bottom: 0;
-right: 0;}
- */
+#Burgers,
+#Chicken,
+#Tortillas,
+#Meals,
+#Spicy,
+#Potatos,
+#Crunchies {
+  color: gold;
+  text-align: center;
+  font-size: 25px;
+  border: solid 3px gold;
+  border-radius: 10px;
+  min-height: 200px;
+}
+.content {
+  color: aliceblue;
+  font-size: 20px;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+}
+.footer {
+  position: relative;
+  background-color: azure;
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  bottom: 0;
+  right: 0;
+}
