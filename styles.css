@@ -7,7 +7,7 @@
 }
 body {
   color: white;
-  background-color: rgb(53, 52, 52);
+  background: linear-gradient(to bottom, #333, #333, gold, #333, #333);
 }
 nav {
   width: 100%;
@@ -17,13 +17,17 @@ nav {
   right: 0px;
   z-index: 3000;
 }
+
 .container {
   display: grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+ justify-items: center; 
   min-height: 200px;
-  min-width: 50px;
+  min-width: 300px;
   gap: 25px;
   border: 1px gold;
+
+  border-radius: 15px
 }
 
 #Burgers,
@@ -33,12 +37,14 @@ nav {
 #Spicy,
 #Potatos,
 #Crunchies {
-  color: gold;
+
+  color: white;
   text-align: center;
   font-size: 25px;
   border: solid 3px gold;
   border-radius: 10px;
   min-height: 200px;
+  width: 300px;
 }
 .content {
   color: aliceblue;
@@ -46,6 +52,9 @@ nav {
   align-self: center;
   align-content: center;
   justify-content: center;
+  background:  black;
+  padding: 20px;
+  margin: 1px;
 }
 .footer {
   position: relative;
@@ -57,4 +66,10 @@ nav {
   font-size: 20px;
   bottom: 0;
   right: 0;
+}
+.ig{
+   position: fixed;
+  bottom: 20px;
+  right: 20px;
+border-radius: 50%;
 }
