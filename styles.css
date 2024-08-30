@@ -108,3 +108,14 @@ img {
   bottom: 0;
   right: 0;
 }
+@media only screen and (max-width: 768px) {
+  /* Your mobile-specific CSS goes here */
+  body {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .container {
+      width: 100%;
+      padding: 0;
+  }}
