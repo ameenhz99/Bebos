@@ -4,10 +4,11 @@
   font-size: 75px;
   color: gold;
   margin: 10px 5px 10px 5px;
+  padding: 10px;
 }
 body {
   color: white;
-  background: linear-gradient(to bottom, #333, #333, gold, #333, #333);
+  background: linear-gradient(to right, #333, rgb(202, 172, 0), #333);
 }
 nav {
   width: 100%;
@@ -17,17 +18,24 @@ nav {
   right: 0px;
   z-index: 3000;
 }
+.nav-items {
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+  color: #333;
+
+  cursor: pointer;
+}
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
- justify-items: center; 
-  min-height: 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+
   min-width: 300px;
   gap: 25px;
   border: 1px gold;
-
-  border-radius: 15px
+  grid-auto-columns: auto;
+  border-radius: 15px;
 }
 
 #Burgers,
@@ -37,14 +45,19 @@ nav {
 #Spicy,
 #Potatos,
 #Crunchies {
+  color: rgb(0, 0, 0);
 
-  color: white;
   text-align: center;
   font-size: 25px;
-  border: solid 3px gold;
+  border: solid 3px #333;
   border-radius: 10px;
   min-height: 200px;
   width: 300px;
+}
+ins {
+  color: black;
+
+  border-radius: 5px;
 }
 .content {
   color: aliceblue;
@@ -52,7 +65,7 @@ nav {
   align-self: center;
   align-content: center;
   justify-content: center;
-  background:  none;
+  background: none;
   padding: 20px;
   margin: 1px;
 }
@@ -67,21 +80,30 @@ nav {
   bottom: 0;
   right: 0;
 }
-.ig{
-   position: fixed;
+
+.linkContainer {
+  display: flex;
+border-radius: 50%;
+  flex-direction: row;
+  position: fixed;
   bottom: 20px;
   right: 20px;
-border-radius: 50%;
+  gap: 5px;
 }
 
-.footer{ position: relative;
-background-color: azure;
-color: black;
-width: 100%;
-text-align:center;
-font-weight: bold;
-font-size: 20px;
-bottom: 0;
-right: 0;}
- 
+img {
+  border-radius: 50%;
+  height: 60px;
+}
 
+.footer {
+  position: relative;
+  background-color: azure;
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  bottom: 0;
+  right: 0;
+}
