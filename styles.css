@@ -9,6 +9,7 @@
 body {
   color: white;
   background: radial-gradient(circle, #333, rgb(202, 172, 0), #333);
+  background-repeat: no-repeat;
 }
 nav {
   width: 100%;
