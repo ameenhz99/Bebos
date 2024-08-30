@@ -8,7 +8,7 @@
 }
 body {
   color: white;
-  background: linear-gradient(to right, #333, rgb(202, 172, 0), #333);
+  background: radial-gradient(circle, #333, rgb(202, 172, 0), #333);
 }
 nav {
   width: 100%;
